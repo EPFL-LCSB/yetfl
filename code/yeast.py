@@ -51,7 +51,7 @@ def clean_string(s):
 
 
 #data_dir = '/src/yetfl/data'
-data_dir = '../organism_data/info_yeast'
+data_dir = '../info_yeast'
 
 
 #########################
@@ -1125,7 +1125,7 @@ def remove_DNA(model):
     model.remove_reactions(DNA_rxn)
 
 # for some procedures we need to have unmodified model
-cobra_model = cobra.io.load_matlab_model('../models/yeast8_thermo_curated.mat')
+cobra_model = cobra.io.load_matlab_model('../input_models/yeast8_thermo_curated.mat')
     
 def get_macromole_ratio():
     # model must be an unmodified model
