@@ -1,0 +1,4 @@
+#!/bin/bash
+
+pip install zenodo_get
+zenodo_get -d 10.5281/zenodo.4541577  
