@@ -18,7 +18,7 @@ from etfl.core import Enzyme, Ribosome, RNAPolymerase, ThermoMEModel, MEModel
 from etfl.io.json import save_json_model
 from pytfa.utils.logger import get_timestr
 
-from etfl.organisms.yeast import   get_model, get_thermo_data, get_coupling_dict, \
+from yeast import   get_model, get_thermo_data, get_coupling_dict, \
                         get_mrna_dict, get_rnap, get_monomers_dict, \
                         get_nt_sequences, get_ratios, get_mass_ratios, \
                         get_mrna_metrics, get_enz_metrics, \
@@ -43,7 +43,7 @@ from etfl.core.allocation import add_protein_mass_requirement, \
 from etfl.analysis.summary import print_standard_sol
 from etfl.optim.constraints import RNAPAllocation
 
-from etfl.organisms.yeast_utils import coupling_trna_enzymes_dict
+from yeast_utils import coupling_trna_enzymes_dict
 
 # Costrain further the enzymes just like gecko?
 frac_proteome = True
