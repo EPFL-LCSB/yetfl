@@ -1,4 +1,9 @@
 #!/bin/bash
 
 pip install zenodo_get
-zenodo_get -d 10.5281/zenodo.4541577  
+zenodo_get 10.5281/zenodo.4778047
+sudo apt-get install unzip
+unzip info_yeast.zip
+unzip input_models.zip
+rm info_yeast.zip
+rm input_models.zip
