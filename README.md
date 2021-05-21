@@ -8,4 +8,4 @@ This code is an early release. You will need [pyTFA](https://github.com/EPFL-LCS
 
 For further details, see [ETFL's instruction](https://github.com/EPFL-LCSB/etfl/blob/master/README.rst).
 
-To run the scripts, the data that is deposited in [Zenodo](https://zenodo.org/record/4541577#.YJUL9OvRZmA) is needed.
+To run the scripts, the data that is deposited in [Zenodo](https://zenodo.org/record/4778047#.YKfF8OvRY6U) is needed.
