@@ -13,21 +13,21 @@ from pytfa.io import load_thermoDB,                    \
                             read_compartment_data, apply_compartment_data
 from pytfa.io.base import import_matlab_model
 
-from .ecoli_utils import infer_enzyme_from_gpr
+from etfl.data.ecoli_utils import infer_enzyme_from_gpr
 
-from ..core.expression import is_me_compatible
-from ..core import Enzyme, Ribosome, RNAPolymerase, ThermoMEModel, MEModel
-from ..core.rna import mRNA
+from etfl.core.expression import is_me_compatible
+from etfl.core import Enzyme, Ribosome, RNAPolymerase, ThermoMEModel, MEModel
+from etfl.core.rna import mRNA
 
-from ..optim.constraints import ConstantAllocation
-from ..optim.variables import EnzymeVariable
+from etfl.optim.constraints import ConstantAllocation
+from etfl.optim.variables import EnzymeVariable
 from pytfa.optim.utils import symbol_sum
 
 from collections import defaultdict
 from warnings import warn
 import re
 
-from .yeast_utils import compositions_from_string, special_coupling, find_bbb_ratio, is_transport
+from yeast_utils import compositions_from_string, special_coupling, find_bbb_ratio, is_transport
 
 
 partial_saturation = False

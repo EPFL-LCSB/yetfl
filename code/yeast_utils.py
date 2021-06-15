@@ -1,14 +1,14 @@
 from copy import deepcopy
 import numpy as np
 
-from ..optim.variables import  BinaryVariable, \
+from etfl.optim.variables import  BinaryVariable, \
                                      GeneVariable, get_binary_type
-from ..optim.constraints import RNAPAllocation
+from etfl.optim.constraints import RNAPAllocation
 
 import sympy
 import pandas as pd
 
-from ..utils.parsing import parse_gpr
+from etfl.utils.parsing import parse_gpr
 
 
 def is_transport(rxn):
