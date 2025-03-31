@@ -286,11 +286,11 @@ def create_model(has_thermo, has_expression, var_allocation,
                                    ion_rxn='r_4599')
     else:
         # constant allocation constraint to fix the sahere of RNA and protein
-        fix_prot_ratio(yeast, mass_ratios)
-        fix_RNA_ratio(yeast, mass_ratios)
+        fix_prot_ratio(yeast, mass_ratios['protein'])
+        fix_RNA_ratio(yeast, mass_ratios['RNA'])
         # this is added to have a DNA variable anyway which is needed for the RNAP allocation
         # DNA should not be removed from the biomass in this case
-        fix_DNA_ratio(yeast, mass_ratios=mass_ratios, gc_ratio=gc_ratio, 
+        fix_DNA_ratio(yeast, mass_ratios['DNA'], gc_ratio=gc_ratio, 
                       chromosome_len=chromosome_len)
 
         
